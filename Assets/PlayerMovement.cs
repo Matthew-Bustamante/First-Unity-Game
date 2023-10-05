@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
+    // This is a test comment
     void Update()
     {
         if (Input.GetKeyDown("space"))
