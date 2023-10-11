@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // instance variables 
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
@@ -22,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    // This is a test comment
     private void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal");
@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    // update animation method that makes the player have an animation when moving left and right
     private void UpdateAnimationState()
     {
         if (dirX > 0f)
